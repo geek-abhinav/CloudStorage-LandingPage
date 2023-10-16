@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 50, // Adjust the offset as needed
+                top: targetElement.offsetTop - 50, 
                 behavior: 'smooth'
             });
         }
