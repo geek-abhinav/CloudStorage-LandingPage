@@ -1,13 +1,13 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, h4, p, ul, li {
     margin: 0;
     padding: 0;
     
 }
 
-/* Navbar */
+
 .navbar {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Semi-transparent dark blue background */
+    background: linear-gradient(to left, #001f33, #005a8e);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -18,7 +18,7 @@ body, h1, h2, h3, h4, p, ul, li {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-color: #fff; /* Navbar toggler icon color */
+    background-color: #fff;
 }
 .navbar-nav .nav-link::before {
     content: '';
@@ -27,48 +27,48 @@ body, h1, h2, h3, h4, p, ul, li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff6b81; /* Underline color */
-    transform: scaleX(0); /* Initially invisible */
+    background-color: #ff6b81;
+    transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover::before {
-    transform: scaleX(1); /* Show the underline on hover */
+    transform: scaleX(1);
     transform-origin: left;
 }
-/* Apply the Comfortaa font with weight 700 to the navbar name */
+
 .navbar-brand {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #fff; /* Set the text color to white for visibility */
-}
-/* Use Montserrat font for other navbar links */
-.navbar-nav .nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300; /* Use the specified Montserrat font weight */
+    font-size: 24px;
+    color: #fff;
 }
 
-/* Button Styles */
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
 .btn {
-    color: #fff !important; /* Set the text color to white */
-    background: linear-gradient(to right, #ff6b81, #ffa931) !important; /* Apply gradient background */
+    color: #fff !important;
+    background: linear-gradient(to right, #ff6b81, #ffa931) !important;
     border: none !important;
-    border-radius: 30px !important; /* Add some curve to buttons */
-    padding: 10px 20px !important; /* Adjust padding as needed */
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
     transition: background-color 0.3s;
 }
 
-/* Hover effect for buttons */
+
 .btn:hover {
-    background: linear-gradient(to right, #ffa931, #ff6b81) !important; /* Change gradient on hover */
-    color: #fff !important; /* Change text color on hover */
+    background: linear-gradient(to right, #ffa931, #ff6b81) !important;
+    color: #fff !important;
 }
 
-/* Hero Section */
+
 .hero {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
     font-family: 'Comfortaa', sans-serif;
@@ -79,9 +79,9 @@ body, h1, h2, h3, h4, p, ul, li {
     -webkit-background-clip: text;
     color: transparent;
 }
-/* Adjust the position of the image and add margin to the text */
+
 .hero .container .row .col-md-6:first-child img {
-    margin-top: -70px; /* Move the image upwards */
+    margin-top: -70px;
     margin-left: -20px;
     transition: transform 0.3s;
 }
@@ -89,38 +89,39 @@ body, h1, h2, h3, h4, p, ul, li {
     transform: scale(1.05);
 }
 .hero .container .row .col-md-6:last-child h1 {
-    margin-bottom: 10px; /* Increase the gap between the title and the paragraph */
+    margin-bottom: 10px;
 }
 
-/* Increase the gap between the paragraph and buttons */
+
 .hero .container .row .col-md-6:last-child p {
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px;
 }
 
-/* Increase the gap between buttons */
+
 .hero .container .row .col-md-6:last-child .btn {
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 .hero p {
     font-family: 'open Sans', sans-serif;
     font-style: normal;
-    font-size: 900;
-    font-weight: 550;
+    font-size: 700;
+    font-weight: 600;
+    letter-spacing: 1.0px;
 }
 
-/* Features Section */
+
 .features {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #ffffffdb;
     padding: 100px 0;
     
     
 }
-/* Add styles for the images */
+
 .feature-image {
-    max-height: 100%; /* Match the height of the card */
+    max-height: 100%;
     display: block;
-    margin: 0 -110px; /* Center the image horizontally */
+    margin: 0 -110px;
 }
 #featureimg2{
     margin: 0 -170px;
@@ -131,41 +132,41 @@ body, h1, h2, h3, h4, p, ul, li {
 #featureimg1{
     margin: 0 -135px;
 }
-/* Updated Feature Card Styles */
+
 .feature-card {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 70px;
-    transition: transform 0.3s; /* Add a transition for smooth hover effect */
-    position: relative; /* Position the cards relative to the container */
+    transition: transform 0.3s;
+    position: relative;
 }
 
 .left-card {
     float: left;
     clear: both;
-    margin-left: -50%; /* Adjust this value to move the left card further left */
+    margin-left: -50%;
     margin-right: auto;
 }
 
 .right-card {
     float: right;
     clear: both;
-    margin-right: -50%; /* Adjust this value to move the right card further right */
+    margin-right: -50%;
     margin-left: auto;
 }
-/* Position the images outside the cards */
+
 .left-card .feature-image {
     position: absolute;
     top: 0;
-    right: -70px; /* Adjust this value to move the image further right */
+    right: -70px;
     
 }
 
 .right-card .feature-image {
     position: absolute;
     top: 0;
-    left: -70px; /* Adjust this value to move the image further left */
+    left: -70px;
     
 }
 
@@ -176,9 +177,9 @@ body, h1, h2, h3, h4, p, ul, li {
     clear: both;
 }
 
-/* Hover effect for feature cards */
+
 .feature-card:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
+    transform: scale(1.05);
 }
 
 
@@ -189,19 +190,19 @@ body, h1, h2, h3, h4, p, ul, li {
 }
 .feature-card p {
     font-family: 'open Sans', sans-serif;
-    font-size: 400;
+    font-size: 500;
     font-style: italic;
     letter-spacing: 1.3px;
     color: #fffffff1;
 }
-/* Pricing Section */
+
 .pricing {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
-/* Add margin to the top of the section heading */
-/* Add more margin to the top of the section heading */
+
+
 #pricingheading {
     
     margin-bottom: 30px;
@@ -211,10 +212,13 @@ body, h1, h2, h3, h4, p, ul, li {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center; /* Center the text */
+    text-align: center;
+    transition: transform 0.3s;
    
 }
-
+.pricing-card:hover {
+    transform: scale(1.05);
+}
 .pricing-card h3 {
     background: linear-gradient(to right, #ff6b81, #ffa931);
     -webkit-background-clip: text;
@@ -224,34 +228,34 @@ body, h1, h2, h3, h4, p, ul, li {
 .price {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px; /* Add some space above the price */
+    margin-top: 10px;
 }
 
 .pricing-card ul {
-    padding: 0; /* Remove default padding */
-    margin-top: 20px; /* Add space between text lines */
+    padding: 0;
+    margin-top: 20px;
     list-style-type: none;
 }
 
 .pricing-card ul li {
-    margin: 10px 0; /* Add space above and below each item */
-    font-size: 18px; /* Increase font size for better readability */
+    margin: 10px 0;
+    font-size: 18px;
 }
-/* Add margin to the top of the buttons to move them downwards */
+
 .pricing-card .btn {
     margin-top: 15px;
 }
 
 
-/* Statistics Section */
+
 .statistics {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
-/* Add margin to the top of the statistic columns */
+
 .col-md-4 {
-    margin-top: 30px; /* Adjust the margin as needed */
+    margin-top: 30px;
 }
 .statistic {
     text-align: center;
@@ -269,23 +273,23 @@ body, h1, h2, h3, h4, p, ul, li {
     font-weight: bold;
 }
 
-/* Statistics Section */
+
 .statistics {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
 
-/* Comments Section */
+
 .comments {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
 
-/* Add margin to the top of the section heading */
+
 .comments .section-heading {
-    margin-bottom: 35px; /* Adjust the margin as needed */
+    margin-bottom: 35px;
 }
 
 .comment-card {
@@ -293,39 +297,39 @@ body, h1, h2, h3, h4, p, ul, li {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: transform 0.3s; /* Add a transition for smooth hover effect */
+    transition: transform 0.3s;
 }
 
-/* Hover effect for comment cards */
+
 .comment-card:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
+    transform: scale(1.05);
 }
 
 
 .comment-text {
     margin-bottom: 10px;
-    color: #fff; /* Text color for comments */
+    color: #fff;
 }
 
 .comment-author {
     font-weight: bold;
-    color: #fff; /* Text color for comment authors */
+    color: #fff;
 }
 
 
-/* FAQ Section */
+
 .faq {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
 
-/* Add margin to the top of the FAQ section heading */
+
 .faq h2.section-heading {
-    margin-bottom: 30px; /* Adjust the margin as needed */
+    margin-bottom: 30px;
 }
 
-/* Style FAQ items for a modern and elegant look */
+
 .faq-item {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -337,23 +341,23 @@ body, h1, h2, h3, h4, p, ul, li {
 }
 .faq-question {
     font-weight: bold;
-    color: #fff; /* Text color for FAQ questions */
-    font-size: 20px; /* Adjust font size as needed */
+    color: #fff;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .faq-answer {
-    color: #fff; /* Text color for FAQ answers */
-    font-size: 18px; /* Adjust font size as needed */
+    color: #fff;
+    font-size: 18px;
 }
-/* Add some space between FAQ items */
+
 .faq-item + .faq-item {
     margin-top: 20px;
 }
 
-/* Get in Touch Section */
+
 .contact {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 100px 0;
 }
@@ -390,9 +394,9 @@ body, h1, h2, h3, h4, p, ul, li {
   }
 
 
-/* Footer Section */
+
 .footer {
-    background: linear-gradient(to left, #001f33, #005a8e); /* Gradient from dark blue to blue */
+    background: linear-gradient(to left, #001f33, #005a8e);
     color: #fff;
     padding: 50px 0;
 }
@@ -403,49 +407,49 @@ body, h1, h2, h3, h4, p, ul, li {
     margin-bottom: 10px;
 }
 
-/* Rest of your CSS styles go here */
 
-/* Hero Section */
+
+
 @media (max-width: 768px) {
     .hero .container .row .col-md-6:first-child img {
-      max-width: 100%; /* Make the image responsive and adjust its size */
-      margin-top: 0; /* Reset margin-top */
+      max-width: 100%;
+      margin-top: 0;
     }
   
     .hero .container .row .col-md-6:last-child {
-      text-align: center; /* Center-align the text for smaller screens */
+      text-align: center;
     }
   }
   
-/* Features Section */
+
 @media (max-width: 768px) {
     .feature-card {
-      text-align: center; /* Center-align the text for smaller screens */
+      text-align: center;
     }
   
     .feature-card .feature-image {
-      max-height: 100px; /* Adjust the max-height for smaller screens */
-      margin: 0 auto 20px; /* Center-align the image horizontally and add some margin at the bottom */
-      display: block; /* Make sure the image is displayed as a block element */
-      position: relative; /* Add relative positioning for proper alignment */
-      top: -50px; /* Adjust the position to align the image with text */
-      left: 0; /* Reset left position for center alignment */
-      right: 0; /* Reset right position for center alignment */
+      max-height: 100px;
+      margin: 0 auto 20px;
+      display: block;
+      position: relative;
+      top: -50px;
+      left: 0;
+      right: 0;
     }
     
-    /* Reset margin for left and right cards */
+   
     .left-card, .right-card {
       margin-left: 0;
       margin-right: 0;
     }
   
-    /* Override styles for left and right cards */
+   
     .left-card .feature-image {
-      top: -50px; /* Adjust the position to align the image with text */
+      top: -50px;
     }
   
     .right-card .feature-image {
-      top: -10px; /* Adjust the position to align the image with text */
+      top: -10px;
       left: +220px;
     }
     #featureimg2{
@@ -457,7 +461,7 @@ body, h1, h2, h3, h4, p, ul, li {
         
     }
     #featureimg3{
-        top: -10px; /* Adjust the position to align the image with text */
+        top: -10px;
         left: +220px;
       }
 }
